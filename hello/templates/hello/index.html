@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="{% static 'hello/index.css' %}" rel="stylesheet"> 
+</head>
+<body>
+    <div class="navbar">
+        <div id="logo">
+            <img src="{% static 'hello/images/logo.png' %}" alt="Logo image">
+            <p>learnOrbit</p>
+        </div>
+        <ul>
+            <li><a id="logIn">Login</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a>Cursos</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <h1>Nunca es tarde para aprender</h1>
+    <div class="image">
+        <img src="{% static 'hello/images/estudiantes_prof.png' %}" alt="Home image">
+    </div>
+    <div id="row">
+    </div>
+    <div id="nosotros">
+        <h1>Nosotros</h1>
+        
+    </div>
+</body>
+</html>
