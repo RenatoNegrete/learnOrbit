@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+.navbar {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+#logo {
+    margin-left: 25px;
+}
+
+#logo img {
+    height: 65px;
+    float: left;
+}
+
+#logo p {
+    float: left;
+    margin-left: 5px;
+    font-size: 140%;
+    color: #156920;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    float: right;
+}
+.navbar li a {
+    display: block;
+    color: black;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 140%;
+}
+
+form {
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+}
+
+label {
+    display: block; /* Make the label a block element */
+    text-align: center;
+    margin-bottom: 15px; /* Add some space below the label */
+}
+
+input {
+    width: 100%; /* Make the input fields full width */
+    padding: 8px; /* Add some padding */
+    margin-bottom: 15px; /* Space below the input fields */
+}
+
+.error {
+    color: red; /* Style for error messages */
+    margin-top: -8px; /* Adjust position of error messages */
+    margin-bottom: 10px; /* Space below error messages */
+}

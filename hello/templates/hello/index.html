@@ -15,21 +15,54 @@
             <p>learnOrbit</p>
         </div>
         <ul>
-            <li><a id="logIn">Login</a></li>
+            <li><a href="{% url 'login' %}" id="logIn">Login</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a>Cursos</a></li>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{% url 'index' %}">Home</a></li>
         </ul>
     </div>
     <h1>Nunca es tarde para aprender</h1>
+    <button id="button">Mira nuestros cursos</button>
     <div class="image">
         <img src="{% static 'hello/images/estudiantes_prof.png' %}" alt="Home image">
     </div>
     <div id="row">
     </div>
     <div id="nosotros">
-        <h1>Nosotros</h1>
-        
+        <h1 class="subtitles">Nosotros</h1>
+        <p>Nuestro objetivo es facilitar el acceso a contenidode calidad a estudiantes universitarios. Con nosotros nuestros estudiantes podrán acceder a cursos hechos por sus profesores o un profesor de su elección para poder aprender algo nuevo o reforzar un tema visto previamente. Con esto esperamos mejorar la experiencia de los estudiantes al momento de estudiar.</p>
     </div>
+    <div id="equipo">
+        <h1 class="subtitles">Nuestro equipo</h1>
+        <div class="team-members">
+            <div class="member">
+                <p>Eduardo DeBrigard</p>
+                <p>Ing. Sistemas</p>
+            </div>
+            <div class="member">
+                <p>Juan Diego Romero</p>
+                <p>Ing. Sistemas</p>
+            </div>
+            <div class="member">
+                <p>Samuel Mejía</p>
+                <p>Ing. Sistemas</p>
+            </div>
+            <div class="member">
+                <p>Renato Negrete</p>
+                <p>Ing. Sistemas</p>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-content">
+            <p>Email: <a href="mailto:info@example.com">learnOrbit@example.com</a></p>
+            <p>Phone: <a href="tel:+123456789">+57 39582948298</a></p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">Facebook</a> |
+                <a href="https://twitter.com" target="_blank">Twitter</a> |
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
