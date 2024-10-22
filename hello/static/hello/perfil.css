@@ -86,3 +86,69 @@ h1 {
 .text p {
     margin: 5px 0;
 }
+
+#actualizar {
+    margin-top: 50px;
+    color: white;
+    background-color: #156920;
+    border-radius: 10%;
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px; /* Make the font bigger */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: none; /* Remove button shadow */
+}
+
+#actualizar:hover {    
+    background-color: #1e9c2e;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.tus_cursos {
+    margin-top: 20px;
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column; /* Hace que los cursos se apilen verticalmente */
+    align-items: center; /* Centra los cursos horizontalmente */
+    gap: 20px; /* Espacio entre los cursos */
+}
+
+.curso {
+    background-color: #f0f0f0;
+    padding: 15px;
+    width: 80%; /* Puedes ajustar el ancho */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.info_curso h2 {
+    margin-bottom: 10px;
+}
+
+.info_curso p {
+    margin: 5px 0;
+}
+
+.ver_mas {
+    position: absolute;
+    bottom: 10px; /* Espacio desde abajo */
+    right: 10px;  /* Espacio desde la derecha */
+    color: white;
+    background-color: #156920;
+    border-radius: 5%;
+    border: none;
+    font-size: 18px; /* Make the font bigger */
+    font-weight: bold;
+}
+
+.ver_mas:hover {
+    background-color: #1e9c2e;
+    scale: 1.05;
+    cursor: pointer;
+}
