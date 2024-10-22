@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+.navbar {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+#logo {
+    margin-left: 25px;
+}
+
+#logo img {
+    height: 65px;
+    float: left;
+
+}
+
+#logo p {
+    float: left;
+    margin-left: 5px;
+    font-size: 140%;
+    color: #156920;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    float: right;
+}
+.navbar li a {
+    display: block;
+    color: black;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 140%;
+}
+
+#logIn {
+    color: white;
+    background-color: #156920;
+    border-radius: 10%;
+}
+
+#logIn:hover {
+    background-color: #1e9c2e;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 500%;
+}
+
+#button {
+    color: white;
+    background-color: #156920;
+    border-radius: 10%;
+    width: 150px;
+    height: 75px;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px; /* Make the font bigger */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: none; /* Remove button shadow */
+}
+
+#button:hover {
+    background-color: #1e9c2e;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.image img {
+    height: 25%;
+    width: 65%;
+}
+
+#row {
+    margin-top: 40px;
+    background-color: #1e9c2e;
+    height: 200px;
+    width: 100%;
+}
+
+.subtitles {
+    text-align: left;
+    margin: 0%;
+    margin-left: 3%;
+    margin-top: 25px;
+}
+
+#nosotros p {
+    font-size: 200%;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#equipo {
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between; /* Spread the elements across the whole width */
+    gap: 50px;
+    margin-top: 15px;
+    width: 100%; /* Make the container full width */
+}
+
+.member {
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1; /* Ensure each member takes up equal space */
+    text-align: center; /* Center the content inside each member */
+}
+
+.member p {
+    font-size: 200%;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p,
+.footer-content .social-media {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #1e9c2e;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
