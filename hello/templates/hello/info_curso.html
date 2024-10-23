@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="{% static 'hello/curso.css' %}" rel="stylesheet"> 
+</head>
+<body>
+    <div class="navbar">
+        <div id="logo">
+            <img src="{% static 'hello/images/logo.png' %}" alt="Logo image">
+            <p>learnOrbit</p>
+        </div>
+        <ul>
+            <li><a href="{% url 'perfil' %}" id="logIn" class="boton_redirect">Mi perfil</a></li>
+            <li><a>Cursos</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+        </ul>
+    </div>
+    <h1>Introducción a la programación</h1>
+    <div class="tarjeta">
+        <div class="izq">
+            <div class="image">
+                <img src="{% static 'hello/images/intro_prog.jpg' %}" alt="">
+            </div>
+            <div class="info">
+                <h2>Introducción a la programación</h2>
+                <p>Jorge Lopez</p>
+                <p>Universidad Javeriana</p>
+            </div>
+        </div>
+        <div class="der">
+            <p>En este curso podrás aprender lo básico de la programación en el lenguaje C++. Aprenderas cosas como tipos de datos, condicionales, ciclos, manejo de archivos, estructuras y otros temas</p>
+            <a href="" class="ir">Ir</a>
+        </div>
+    </div>
+</body>
+</html>

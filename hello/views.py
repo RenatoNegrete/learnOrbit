@@ -51,3 +51,6 @@ def home(request):
 
 def perfil(request):
     return render(request, "hello/perfil.html")
+
+def info_curso(request):
+    return render(request, "hello/info_curso.html")
