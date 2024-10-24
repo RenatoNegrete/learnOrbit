@@ -78,23 +78,13 @@ h1 {
     gap: 20px;
     max-width: 900px; /* Ancho máximo de la tarjeta */
     margin: 20px auto; /* Centra horizontalmente y agrega margen superior e inferior */
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .izq {
-    flex-basis: 60%; /* El div de la izquierda ocupará el 60% del espacio */
+    flex: 1; /* Ambas partes ocuparán el mismo espacio */
     display: flex;
     flex-direction: column; /* Imagen y la info en columna */
     align-items: center; /* Centra el contenido verticalmente */
-}
-
-.der {
-    flex-basis: 40%; /* El div de la derecha ocupará el 40% del espacio */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Espacia el contenido */
-    text-align: center;
 }
 
 .image img {
@@ -107,18 +97,27 @@ h1 {
     text-align: center;
 }
 
-.ir {
-    display: inline-block;
-    padding: 12px;
-    background-color: #156920;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
+.der {
+    flex: 1; /* Ambas partes ocuparán el mismo espacio */
+    text-align: center;
 }
 
-.ir:hover {
+.der button {
+    display: inline-block; /* Hace que los botones estén en línea */
+    padding: 10px 20px;
+    background-color: #156920;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px; /* Añade espacio entre los botones */
+    cursor: pointer;
+}
+
+.der button:hover {
     background-color: #1e9c2e;
     scale: 1.05;
-    cursor: pointer;
+}
+
+#videoContainer {
+    margin-top: 10px;
 }

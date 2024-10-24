@@ -8,5 +8,6 @@ urlpatterns = [
     path('redirect/', views.redirect_view, name='redirect_view'),
     path("home/", views.home, name="home"),
     path("perfil/", views.perfil, name="perfil"),
-    path("info_curso", views.info_curso, name="info_curso")
+    path("info_curso", views.info_curso, name="info_curso"),
+    path("curso/", views.curso, name="curso")
 ]

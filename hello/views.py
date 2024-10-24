@@ -54,3 +54,6 @@ def perfil(request):
 
 def info_curso(request):
     return render(request, "hello/info_curso.html")
+
+def curso(request):
+    return render(request, "hello/curso.html")

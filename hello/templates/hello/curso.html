@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="{% static 'hello/curso.css' %}" rel="stylesheet"> 
+    <link href="{% static 'hello/curso_tema.css' %}" rel="stylesheet"> 
 </head>
 <body>
     <div class="navbar">
@@ -33,9 +33,27 @@
             </div>
         </div>
         <div class="der">
-            <p>En este curso podrás aprender lo básico de la programación en el lenguaje C++. Aprenderas cosas como tipos de datos, condicionales, ciclos, manejo de archivos, estructuras y otros temas</p>
-            <a href="{% url 'curso' %}" class="ir">Ir</a>
+            <button onclick="cambiarVideo('ZzaPdXTrSb8')">Ver Video 1</button>
+            <button onclick="cambiarVideo('99mmpf7LsF4')">Ver Video 2</button>
+            <div id="videoContainer">
+                <iframe id="videoFrame" width="400" height="280" 
+                        src="https://www.youtube.com/embed/ZzaPdXTrSb8?start=371" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </div>
+
+    <script>
+        // Función para cambiar el video
+        function cambiarVideo(videoId, startTime = 0) {
+            const videoFrame = document.getElementById("videoFrame");
+            const newSrc = `https://www.youtube.com/embed/${videoId}?start=${startTime}`;
+            videoFrame.src = newSrc;
+        }
+    </script>
+
 </body>
 </html>

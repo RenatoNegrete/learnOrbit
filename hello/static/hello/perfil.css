@@ -49,6 +49,21 @@ body {
     font-size: 140%;
 }
 
+.log_in {
+    display: inline-block; /* Para que se comporte como un botón */
+    padding: 10px 20px; /* Espaciado interno */
+    color: white;
+    background-color: #156920;
+    border-radius: 10%;
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.log_in:hover {
+    background-color: #1e9c2e;
+    transform: scale(1.05); /* Usa transform en lugar de scale directamente */
+    cursor: pointer;
+}
+
 h1 {
     font-size: 300%;
 }
